@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting App</title>
+    <style>
+      li {
+        border: 1px solid red;
+        margin: 2rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Form validation</h2>
+    <form onsubmit="return false;">
+      <input
+        value="This is just a text box "
+        type="text"
+        name="name"
+        id="name"
+        placeholder="name"
+      />
+      <input type="number" name="age" id="age" placeholder="age" />
+      <button onclick="">Send</button>
+    </form>
+    <br />
+    <br />
+    <br />
+    <form onsubmit="return false;">
+      <input placeholder="Num 1" type="number" id="num1" />
+      <input placeholder="Num 2" type="number" id="num2" />
+      <button onclick="addNum()">add+</button>
+    </form>
+
+    <div id="result"></div>
+    <h2 id="myH2">Voting Application</h2>
+
+    <ul id="displayList"></ul>
+
+    <script src="./assets/js/script.js" defer></script>
+  </body>
+</html>

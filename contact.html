@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Shoes, hand bag, slippers" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <base href="#" />
+    <script src="url"></script>
+    <style>
+      input,
+      select {
+        display: block;
+      }
+    </style>
+    <noscript>This page does not support javaScript</noscript>
+  </head>
+
+  <body>
+    <header class="navHeader">
+      <a href="index.html"><img src="#" alt="Logo" /></a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" target="_top">About</a>
+        <a href="service.html">Services</a>
+        <a href="#">Contact us</a>
+        <!-- <a href="#readMore">Read more</a> -->
+        <a href="https://www.google.com/" target="_blank">Go google</a>
+      </nav>
+    </header>
+    <h1 contenteditable="" class="halfHero">Contact us</h1>
+    <br />
+    <p contenteditable="">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A quis harum
+      cupiditate fugit perspiciatis, aliquid laboriosam aperiam tempore nobis
+      dolores id corporis voluptates iusto doloribus repellendus facere ea in
+      nesciunt.
+    </p>
+    <br />
+    <div class="formWrapper">
+      <fieldset>
+        <legend>Contact Form</legend>
+
+        <form
+          action="signin.php"
+          method="post"
+          target="_blank"
+          autocomplete="on"
+        >
+          <label for="inputs">Subject</label>
+          <input
+            type="text"
+            autofocus
+            value="Just making an enquiry"
+            readonly
+            disabled
+            placeholder="Subject"
+            tabindex="1"
+            autocorrect="on"
+            autocomplete="on"
+            autocapitalize="on"
+            class="input"
+            id="inputs"
+            name="inputs"
+            onclick="gh()"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            placeholder="Email"
+            tabindex="2"
+            name="email"
+            id="email"
+          />
+          <label for="password">Password</label>
+          <input
+            minlength="6"
+            maxlength="12"
+            required
+            type="password"
+            placeholder="Password"
+            name="password"
+            id="password"
+            tabindex="3"
+          />
+
+          <label for="number">Number1</label>
+          <input
+            placeholder="Number1"
+            type="number"
+            name="number1"
+            id="number1"
+          />
+          <fieldset>
+            <legend>Gender</legend>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" />
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" />
+          </fieldset>
+          <fieldset>
+            <legend>Multi choice</legend>
+
+            <label for="opt1">Opt1</label>
+            <input type="checkbox" name="opt1" id="opt1" />
+
+            <label for="opt2">Opt2</label>
+            <input type="checkbox" name="opt2" id="opt2" />
+
+            <label for="opt3">Opt3</label>
+            <input type="checkbox" name="opt3" id="opt3" />
+
+            <label for="opt4">Opt4</label>
+            <input type="checkbox" name="opt4" id="opt4" />
+          </fieldset>
+
+          <label for="file">Upload picture</label>
+          <input
+            type="hidden"
+            value="hey"
+            accept="pdf"
+            name="file"
+            id="file"
+            tabindex="4"
+          />
+          <label for="color">Pick a color</label>
+          <input type="color" name="color" id="color" tabindex="5" />
+
+          <!-- <legend>Gender</legend> -->
+          <label for="datetime-local">Date time</label>
+          <input
+            type="datetime-local"
+            name="datetime-local"
+            id="datetime-local"
+          />
+          <input
+            type="search"
+            placeholder="search for browsers"
+            list="browsers"
+          />
+          <datalist id="browsers">
+            <option value="UC browsers"></option>
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Brave"></option>
+            <option value="Opera mini"></option>
+          </datalist>
+
+          <select name="select" id="select">
+            <option value="--Select--" selected disabled>--select--</option>
+            <option value="Apple">Apple</option>
+            <optgroup>
+              <option value="Kiwi">Kiwi</option>
+              <option value="Grape">Grape</option>
+            </optgroup>
+          </select>
+
+          <textarea
+            name="msg"
+            id="msg"
+            placeholder="leave us a message"
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <input type="reset" value="Reset" tabindex="6" />
+          <input type="submit" value="Submit" />
+        </form>
+      </fieldset>
+    </div>
+  </body>
+
+  <footer>&copy;&nbsp;Esther&nbsp;2026</footer>
+</html>
